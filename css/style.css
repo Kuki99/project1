@@ -1,0 +1,315 @@
+@font-face {
+	font-family: 'MyriadPro-BlackCond';
+	src: url('../fonts/myriadpro-blackcond.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/myriadpro-blackcond.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/myriadpro-blackcond.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/myriadpro-blackcond.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/myriadpro-blackcond.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/myriadpro-blackcond.svg#myriadpro-blackcond') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;}
+/* main_site*/
+/* header */
+.header{
+    position: relative;
+}
+.header > .wrapper{
+width: 1000px;
+margin: 24px auto 0px;
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+.logo{
+font-size: 18px;
+display: inline-block;
+position: relative;
+z-index: 5;
+}
+.logo_main{
+font-family: 'Agency FB';
+font-size: 48px;
+text-transform: uppercase;
+line-height: 1.2;
+font-weight: 700;
+display: inline-block;
+}
+.logo_main .price{
+background-image: linear-gradient(0.0deg, #000000 0%, #464646 100%);
+color: #000000;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.logo_main .num{
+color:white;
+background-image:linear-gradient(0deg, transparent 17%, rgb(236, 20, 20) 0%, rgb(242, 108, 79) 84%, transparent 10%);
+border-radius: 0 15px 15px 0;
+padding: 0 5px 0 5px;
+margin-left: 5px;
+}
+.logo_text{
+font-family: Arial;
+font-size: 11px;
+line-height: 1.2;
+font-weight: 400;
+font-style: italic;
+color: #7d7d7d;
+display: inline-block;
+vertical-align: top;
+padding: 15px 0px 7px 10px;
+}
+.logo_text span:first-child{
+display: block;
+}
+.search{
+    position: relative;
+    z-index: 5;
+}
+input[type="search"]{
+    width: 230px;
+    height: 38px;
+    background: no-repeat white url('../img/shape.png') right;
+    background-position: 195px 11px;
+    border-radius: 100px;
+    border-image: linear-gradient(0deg ,#b8b4b4 , #e1dddd);
+    border-image-slice: 1;
+    border: 3px solid #b8b4b4;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+    position: relative;
+}
+.search::before{
+    content: "";
+    width: 159px;
+    height: 67px;
+    background: url('../img/search.png') no-repeat;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+body{
+    position: relative;
+}
+.nav > .wrapper{
+    margin: 24px auto;
+    width: 1000px; 
+    overflow: hidden;
+    border-radius: 10px;  
+    box-shadow:0px -3px #01b6ef; 
+}
+.menu{
+    width: 100%;
+	display: table;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.menu li{
+    
+    background-image: linear-gradient(0.0deg, #0072bc 0%,#0b96ca 100%);
+    display: table-cell;
+}
+.menu li a{
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 1px solid #0b96ca;
+    border-image: linear-gradient(0deg, transparent 13%, #0072bc 59%,#0687c4 78%, transparent 87%);
+    border-image-slice: 1;
+    padding: 11px 0px 12px;
+	text-align:center;
+} 
+.menu li a:focus{
+     background-image: linear-gradient(to top, #098dd9 0%, #00bff3 100%);;
+}
+.menu li a:hover{
+    color: #fff200;
+} 
+ .menu .first{
+    padding-left: 31px;
+} 
+.menu li+li+li+li+li+li+li+li a{
+    border-right: none;
+    padding-right: 31px;
+}
+ .sky::before{
+    content: "";
+    background: no-repeat center url("../img/sky.png");
+    position: absolute;
+    width: 100vw;
+    height: 168px;
+    top: 21px;
+    left: 0; 
+} 
+.photo_main{
+    width: 1000px;
+    margin: 27px auto 0px;
+    position: relative;
+    z-index: 5;
+}
+.photo_main div::before{
+    content: 'Lorem Ipsum это текст-"рыба"';
+    width: 400px;
+    height: 26px;
+    top: 62px;
+    right: 88px;
+    position: absolute;
+    color:white;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'MyriadPro-BlackCond';
+}
+.photo_main div+div::before{
+    content: "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное.";
+    width: 450px;
+    height: 48px;
+    top: 105px;
+    right: 38px;
+    position: absolute;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.city::before{
+    content: "";
+    background: no-repeat center url("../img/city.png");
+    position: absolute;
+    width: 100vw;
+    height: 168px;
+    top: 130px;
+    left: 0; 
+}
+.dop_menu{
+    height: 105px;
+    width: 100vw ;
+    background-image: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+}
+.dop_menu ul{
+    display: flex;
+    justify-content: center;
+}
+.dop_menu ul li{
+   
+}
+.dop_menu ul li a {
+    display: block;
+    padding: 20px 130px;
+    color: #0174bd;
+    font-size: 14px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dop_menu ul li a::before{
+    content: "Каталог всех магазинов города Саранск и Мордовия";
+    color: #676767;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 44px;
+    left: 129px;
+    width: 175px;
+    height: 25px;
+    position: absolute;
+}
+.dop_menu ul li a::after{
+    content: "";
+    background: url("../img/smart.png");
+    top: 21px;
+    left: 30px;
+    width: 84px;
+    height: 58px;
+    position: absolute;
+}
+.dop_menu ul li+li a::before{
+    content: "Все о покупках и возможных подводных камнях..."; 
+    color: #676767;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 44px;
+    left: 129px;
+    width: 224px;
+    height: 25px;
+    position: absolute;
+}
+.dop_menu ul li+li a::after{
+    content: "";
+    background: url("../img/vector_smart_object_126.png");
+    top: 21px;
+    left: 30px;
+    width: 69px;
+    height: 67px;
+    position: absolute;
+}
+.dop_menu ul li+li+li a::before{
+    content: "Прогноз погоды на неделю для города Саранск и Мордовия"; 
+    color: #676767;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 44px;
+    left: 129px;
+    width: 175px;
+    height: 23px;
+    position: absolute;
+}
+.dop_menu ul li+li+li a::after{
+    content: "";
+    background: url("../img/Rainbow@1X.png")no-repeat;
+    top: 15px;
+    left: 30px;
+    width: 80px;
+    height: 85px;
+    position: absolute;
+}
+
+
+
+/* main */
+/* footer */
