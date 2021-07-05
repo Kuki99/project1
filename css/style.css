@@ -107,7 +107,7 @@ display: block;
     position: relative;
     z-index: 5;
 }
-input[type="search"]{
+input[type="search"]{   
     width: 230px;
     height: 38px;
     background: no-repeat white url('../img/shape.png') right;
@@ -217,16 +217,21 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
-
 .city::before{
     content: "";
-    background: no-repeat center url("../img/city.png");
+    background: repeat-x url(../img/city.png);
+    background-position: -26px 1px;
     position: absolute;
     width: 100vw;
-    height: 168px;
-    top: 130px;
-    left: 0; 
+    height: 97px;
+    top: 194px;
+    left: 0;
 }
+
+
+
+
+
 .dop_menu{
     height: 105px;
     width: 100vw ;
@@ -235,48 +240,31 @@ body{
 .dop_menu ul{
     display: flex;
     justify-content: center;
-}
-.dop_menu ul li{
-   
+    
 }
 .dop_menu ul li a {
     display: block;
-    padding: 20px 130px;
+    padding: 20px 130px 8px 130px;
     color: #0174bd;
     font-size: 14px;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+    /* outline: 1px solid red; */
 }
-
-.dop_menu ul li a::before{
-    content: "Каталог всех магазинов города Саранск и Мордовия";
+li span{
     color: #676767;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    top: 44px;
-    left: 129px;
-    width: 175px;
-    height: 25px;
-    position: absolute;
+    display: block;
+    padding: 0 0 0 128px ;
 }
-.dop_menu ul li a::after{
+ .dop_menu ul li a::after{
     content: "";
     background: url("../img/smart.png");
     top: 21px;
     left: 30px;
     width: 84px;
     height: 58px;
-    position: absolute;
-}
-.dop_menu ul li+li a::before{
-    content: "Все о покупках и возможных подводных камнях..."; 
-    color: #676767;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 44px;
-    left: 129px;
-    width: 224px;
-    height: 25px;
     position: absolute;
 }
 .dop_menu ul li+li a::after{
@@ -288,17 +276,6 @@ body{
     height: 67px;
     position: absolute;
 }
-.dop_menu ul li+li+li a::before{
-    content: "Прогноз погоды на неделю для города Саранск и Мордовия"; 
-    color: #676767;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 44px;
-    left: 129px;
-    width: 175px;
-    height: 23px;
-    position: absolute;
-}
 .dop_menu ul li+li+li a::after{
     content: "";
     background: url("../img/Rainbow@1X.png")no-repeat;
@@ -307,9 +284,446 @@ body{
     width: 80px;
     height: 85px;
     position: absolute;
+} 
+/* main */
+.main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+.main .wrapper{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    /* border: 2px solid; */
+}
+.column_one{
+    width: 223px;
+    min-height: 500px;
+    /* background: red; */
+}
+.column_two{
+    width: 503px;
+    min-height: 500px;
+    /* background: gold; */
+}
+.column_three{
+    width: 223px;
+    /* min-height: 500px; */
+    /* background: hotpink; */
+    /* margin: 26px ; */
+}
+.bottom_green{
+    width: 223px;
+    height: 38px;
+    border: 2px solid #80e57b;
+    border-radius: 10px;
+    background: linear-gradient(0deg,#ececec,#ffffff) ;
+    /* border-image: linear-gradient(#8be787, #77bd8a); */
+    /* border-image-slice: 1; */
+    position: relative;
+    font-size: 12px;
+}
+.bottom_green a{
+    padding: 13px 65px 12px 14px;
+    display: block;
+    color: #65b47a;
+   
+}
+.bottom_green::before{
+    content: "";
+    top: -19px;
+    right: 14px;
+    width: 28px;
+    height: 33px;
+    background: url("../img/Layer_15.png");
+    position: absolute;
+    z-index: 5;
+}
+.bottom_green::after{
+    content: "";
+    top: -2px;
+    right: 19px;
+    width: 28px;
+    height: 33px;
+    border-top: 2px solid white;
+    position: absolute;
 }
 
+.articles{
+    margin-top: 26px;
+    border: 1px solid #e6e6e6;
+    border-radius: 7px;
+    
+}
+.main_articles{
+    width: 221px;
+    height: 51px;
+    background: linear-gradient(0deg,#ececec,#ffffff) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.main_articles::before{
+    content: "";
+    bottom: -10px;
+    left: 14px;
+    position: absolute;
+    border-right: 0px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 11px solid #ececec;
+}
+h2{
+    padding: 16px 0 20px 14px ;
+}
+.articles .a{
+    color:#0686c4;
+    padding: 14px 15px 5px 30px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.a a{
+    padding-bottom: 12px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0686c4;
+    position: relative;
+}
+.a a:hover{
+    color: red;
+}
+.a a::before{
+    content: ">>";
+    color: red;
+    top: 0px;
+    left: -19px;
+    position: absolute;
+}
 
+.yandex_direct{
+    margin-top: 26px;
+    border: 1px solid #e6e6e6;
+    border-radius: 7px;
+    padding: 11px 9px 10px 6px;
+  
 
-/* main */
+}
+.ya_d{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px 3px 5px 13px;
+    position: relative;
+    z-index: 5;
+    
+}
+.ya_d a{
+    color:black
+}
+.ya_d span{
+    position: relative;
+    z-index: 5;
+}
+.ya_d::before{
+    content: "";
+    width: 68px;
+    height: 15px;
+    top: 2px;
+    left: 11px;
+    position: absolute;
+    background: #feeac7;
+}
+.ya_d::after{
+    content: "";
+    top: 2px;
+    left: 79px;
+    position: absolute;
+    border-bottom: 7px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 9px solid #feeac7;
+}
+.advertising div{
+    padding: 11px 9px 10px 15px;
+    position: relative;
+}
+.advertising div a{
+    font-size: 10px;
+    
+    display: block; 
+    color: #006600;
+}
+.advertising .a_main{
+    font-size: 20px;
+    color: #617fe2;
+    padding-bottom: 10px ;
+}
+.advertising span{
+    display: block;
+    padding-bottom: 6px;
+}
+.bottom_red{
+    width: 223px;
+    height: 38px;
+    font-size: 12px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background: linear-gradient(0deg,#ececec,#ffffff) ;
+    /* border-image: linear-gradient(#8be787, #77bd8a); */
+    /* border-image-slice: 1; */
+    position: relative;
+}
+.bottom_red a{
+    padding: 13px 65px 12px 14px;
+    display: block;
+    color: red;
+   
+}
+.bottom_red::before{
+    content: "";
+    top: -16px;
+    right: 24px;
+    width: 30px;
+    height: 33px;
+    background: url("../img/Layer_18.png");
+    position: absolute;
+    z-index: 5;
+}
+.bottom_red::after{
+    content: "";
+    top: -2px;
+    right: 19px;
+    width: 28px;
+    height: 33px;
+    border-top: 2px solid white;
+    position: absolute;
+}
+.vk{
+    margin-top: 26px;
+    border: 1px solid #e6e6e6;
+    border-radius: 7px;
+    padding: 15px;
+}
+.border{
+    border:1px solid #d8dee4;
+}
+.header_vk{
+    background: #dae2e8;
+    color: #7b7f95;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 5px 5px 4px 10px;
+}
+.icon_vk{
+    width: 15px;
+    height: 17px;
+    background: url("../img/vk.png") no-repeat;
+    padding-right: 3px;
+    
+}
+span{}
+.main_vk{
+    display: flex;
+    font-size: 12px;
+}
+.icon_main{
+    width: 46px;
+    height: 45px;
+    background: url(../img/ra.png) no-repeat;
+    margin: 7px 0 0 10px;
+}
+.main_vk span{
+    padding: 7px 40px 10px 5px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #608190;
+
+}
+.people{
+    display: flex;
+    padding: 10px 0 10px 5px ;
+}
+.img_people{
+    width: 171px;
+    height: 144px;
+    background: url("../img/people.png")no-repeat;
+}
+.cmc{
+    display: flex;
+    background: #eef2f5;
+    font-size: 10px;
+    padding: 2px 0 2px 2px;
+}
+.cmc span{
+    padding-top: 4px  ;
+    color: #7892b7;
+}
+
+.articles_news{
+    border: 1px solid #e6e6e6;
+    border-radius: 7px;
+}
+.main_articles_news{
+    display: block;
+    background: linear-gradient(0deg,#ececec,#ffffff) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.main_articles_news::before{
+    content: "";
+    bottom: -10px;
+    left: 14px;
+    position: absolute;
+    border-right: 0px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 11px solid #ececec;
+}
+.h2_news{
+    padding: 16px 0 20px 14px ;
+    
+}
+.news{
+    padding:5px 15px 15px 15px;
+}
+.img_new{
+    padding: 16px 15px 0 14px;
+}
+.info_news{
+    padding: 16px 11px 0 0;
+}	
+.span_main a{
+    color: #0174bd;
+    
+    font-size: 14px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px ;
+    display: block;
+}	
+.span_a{
+    color: #959595;
+    font-size: 12px;
+    padding-bottom: 15px ;
+    display: block;
+}	
+.span_a a{
+    color: #959595;
+    font-size: 12px;
+}	
+.span_text{
+    font-size: 12px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px ;
+    display: block;
+}	
+.botton_comm{
+    display: flex;
+    justify-content: space-between;
+}
+.botton_comm input[type="button"]{
+    padding: 3px 10px 5px 10px;
+    border-radius: 5px; 
+    border: 1px solid transparent; 
+    box-shadow:0px -3px #01b6ef; 
+    color:white;
+    font-size: 12px;
+    background-image: linear-gradient(to top, #0072bc 0%, #0b96ca 100%);
+}
+ .botton_comm .com{
+    color: #959595;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-top: 5px;
+} 
+.botton_comm span+span{
+    color: #0583c3;
+    font-size: 18px;
+}   
+.post{
+    display: flex;
+    padding-bottom: 15px ;
+    border-bottom: 2px dotted grey;
+}
+.a_end {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.start a{
+    font-size: 18px;
+    color: black;
+    padding-left: 16px;
+}
+.start a:hover{
+    color: red;
+}
+.adress li{
+    display: inline-block;
+    padding: 0 5px ;
+    font-size: 12px;
+}
+.adress li a{
+    color: black
+}
+.adress li a:hover{
+    color: red;
+}
+.end a {
+    font-size: 18px;
+    color: black;
+    padding-right: 16px;
+}
+.end a:hover{
+    color:red;
+}
+
 /* footer */
+.footer{
+    padding-bottom: 20px;
+}
+.footer_end {
+    width: 1000px;
+    margin: 0 auto;
+}
+.footer_end .wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #848484;
+}
+.left span{
+    display: block;
+}
+.center{
+    display: block;
+    padding-right: 190px;
+}
+.center a{
+    color: #848484;
+}
+.ct_a{
+    display: flex;
+}
+.right{
+    display: flex;
+}
+.right span  { 
+    display: block;
+    text-align: right;
+    padding-left: 5px;
+}
+.right .study{
+    padding-left:50px;
+    padding-right: 2px;
+}
+.footer_icon{
+    /* padding: 9px 0 0 10px  ; */
+    width: 28px;
+    height: 24px;
+    background:url("../img/при_наведении.png") no-repeat ;
+}
