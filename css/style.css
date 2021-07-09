@@ -735,6 +735,10 @@
             padding-bottom: 15px;
             display: block;
         }
+        .span_main a:hover{
+            color: red;
+            
+        }
 
         .span_a {
             color: #959595;
