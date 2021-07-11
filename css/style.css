@@ -75,7 +75,7 @@
 
         .header .wrapper {
             width: 1000px;
-            margin: 24px auto 0px;
+                margin: 19px auto 0px;
             display: flex;
             justify-content: space-between;
             position: relative;
@@ -108,9 +108,9 @@
         .logo_main .num {
             color: white;
             background-image: linear-gradient(0deg, transparent 17%, rgb(236, 20, 20) 0%, rgb(242, 108, 79) 84%, transparent 10%);
-            border-radius: 0 15px 15px 0;
-            padding: 0 5px 0 5px;
-            margin-left: 5px;
+            border-radius: 0 21px 21px 0;
+            padding: 0 2px 0 0px;
+            margin-left: 7px;
         }
 
         .logo_text {
@@ -121,7 +121,7 @@
             color: #7d7d7d;
             display: inline-block;
             vertical-align: top;
-            padding: 15px 0px 7px 10px;
+            padding: 15px 0px 7px 4px;
         }
 
         .logo_text span:first-child {
@@ -131,6 +131,7 @@
         .search {
             position: relative;
             z-index: 10;
+            margin: 8px 0 0 0;
         }
 
         input[type="text"] {
@@ -161,17 +162,17 @@
             height: 12px;
             background: url('../img/sprites.png') -10px -33px;    
             position: absolute;
-            top: 12px;
-            right: 12px;
+            top: 16px;
+            right: 17px;
         }
         body {
             position: relative;
         }
         .nav .wrapper {
-            margin: 24px auto;
+            margin: 18px auto;
             width: 1000px;
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 4px;
             box-shadow: 0px -3px #01b6ef;
             position: relative;
             z-index: 5;
@@ -199,7 +200,7 @@
             border-right: 1px solid #0b96ca;
             border-image: linear-gradient(0deg, transparent 13%, #0072bc 59%, #0687c4 78%, transparent 87%);
             border-image-slice: 1;
-            padding: 11px 0px 12px;
+            padding: 11px 15px 12px;
             text-align: center;
         }
 
@@ -263,13 +264,13 @@
 
         .photo_main div::before{
             content: 'Lorem Ipsum это текст-"рыба"';
-            width: 400px;
-            height: 26px;
-            top: 62px;
-            right: 88px;
+            width: 424px;
+            height: 39px;
+            top: 56px;
+            right: 87px;
             position: absolute;
             color: white;
-            font-size: 32px;
+            font-size: 36px;
             text-transform: uppercase;
             font-family: 'MyriadPro-BlackCond';
         }
@@ -278,29 +279,31 @@
             content: "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное.";
             width: 450px;
             height: 48px;
-            top: 105px;
-            right: 38px;
+            top: 107px;
+            line-height: 17px;
+            right: 61px;
             position: absolute;
             text-transform: none;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
+}
         }
         .city{
             width: 100vw;
         }
         .city::before {
             content: "";
-            background: repeat-x url('../img/sprites.png') -10px -795px;
+            background: url(../img/sprites.png) -10px -795px;
             position: absolute;
             width: 100vw;
             height: 97px;
-            top: 194px;
-            left: 0px;
+            top: 209px;
+            left: -25px;
         }
 
         .dop_menu {
             /* height: 105px; */
-            /* padding-bottom: 40px ; */
+            padding-bottom: 19px ;
             width: 100vw; 
             display: flex;
             justify-content: center;
@@ -366,29 +369,19 @@
 
 
         /*  ! main ############################################################### */
-
-        .main {
-            width: 100vw;
+        .wrapper {
             display: flex;
             justify-content: center;
-            margin: 0 auto;
-        }
-
-        .main .wrapper {
-            margin-top: 25px;
-            display: flex;
-            justify-content: space-between;
-            width: 1000px;
+            margin: 24px 0px 0px 22px;
         }
 
         .column_one {
             width: 223px;
-            min-height: 500px;
         }
 
         .column_two {
             width: 503px;
-            min-height: 500px;
+            padding: 0 27px;
         }
 
         .column_three {
@@ -397,7 +390,7 @@
 
         .bottom_green {
             width: 223px;
-            height: 38px;
+            height: 33px;
             border: 2px solid #80e57b;
             border-radius: 10px;
             background: linear-gradient(0deg, #ececec, #ffffff);
@@ -449,7 +442,7 @@
             position: relative;
         }
 
-        .main_articles::before {
+        /* .main_articles::before {
             content: "";
             bottom: -10px;
             left: 14px;
@@ -457,6 +450,28 @@
             border-right: 0px solid transparent;
             border-left: 10px solid transparent;
             border-top: 11px solid #ececec;
+        } */
+         .main_articles::before {
+            content: "";
+            bottom: -7px;
+            left: 14px;
+            position: absolute;
+            border-right: 0px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 7px solid #ececec;
+            box-shadow: #e6e6e6 1px 0px;
+            transform: rotate(361deg);
+        }
+        .main_articles::after {
+            content: "";
+            bottom: -5px;
+            left: 18px;
+            position: absolute;
+            border-right: 0px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 11px solid transparent;
+            box-shadow: #e6e6e6 1px 0px;
+            transform: rotate(125deg);
         }
 
         h2 {
@@ -471,7 +486,7 @@
         }
 
         .a a {
-            padding-bottom: 12px;
+            padding-bottom: 17px;
             resize: none;
             font-family: Arial, Helvetica, sans-serif;
             color: #0686c4;
@@ -491,7 +506,7 @@
         }
 
         .yandex_direct {
-            margin-top: 26px;
+            margin-top: 21px;
             border: 1px solid #e6e6e6;
             border-radius: 7px;
             padding: 11px 9px 10px 6px;
@@ -501,7 +516,7 @@
             font-size: 10px;
             display: flex;
             justify-content: space-between;
-            padding: 5px 3px 5px 13px;
+            padding: 5px 3px 0px 13px;
             position: relative;
             z-index: 5;
         }
@@ -536,7 +551,7 @@
         }
 
         .advertising div {
-            padding: 11px 9px 10px 15px;
+            padding: 0px 9px 10px 15px;
             position: relative;
         }
 
@@ -620,7 +635,7 @@
         }
 
         .vk {
-            margin-top: 26px;
+            margin-top: 0px;
             border: 1px solid #e6e6e6;
             border-radius: 7px;
             padding: 15px;
@@ -691,6 +706,7 @@
         .articles_news {
             border: 1px solid #e6e6e6;
             border-radius: 7px;
+
         }
 
         .main_articles_news {
@@ -699,20 +715,35 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
             position: relative;
+            border-bottom: 1px solid #e6e6e6;
+            
         }
 
         .main_articles_news::before {
             content: "";
-            bottom: -10px;
+            bottom: -7px;
             left: 14px;
             position: absolute;
             border-right: 0px solid transparent;
             border-left: 10px solid transparent;
-            border-top: 11px solid #ececec;
+            border-top: 7px solid #ececec;
+            box-shadow: #e6e6e6 1px 0px;
+            transform: rotate(361deg);
+        }
+        .main_articles_news::after {
+            content: "";
+            bottom: -5px;
+            left: 18px;
+            position: absolute;
+            border-right: 0px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 11px solid transparent;
+            box-shadow: #e6e6e6 1px 0px;
+            transform: rotate(125deg);
         }
 
         .h2_news {
-            padding: 16px 0 20px 14px;
+            padding: 15px 0 15px 13px;
         }
 
         .news {
@@ -720,7 +751,7 @@
         }
 
         .img_new {
-            padding: 16px 15px 0 14px;
+            padding: 13px 6px 0 0px;
         }
 
         .info_news {
@@ -732,7 +763,7 @@
             font-size: 14px;
             text-align: left;
             font-family: Arial, Helvetica, sans-serif;
-            padding-bottom: 15px;
+               padding: 0 0px 17px 5px;
             display: block;
         }
         .span_main a:hover{
@@ -741,10 +772,10 @@
         }
 
         .span_a {
-            color: #959595;
-            font-size: 12px;
-            padding-bottom: 15px;
-            display: block;
+                color: rgb(149, 149, 149);
+                font-size: 12px;
+                padding: 0px 0 15px 6px;
+                display: block;
         }
 
         .span_a a {
@@ -756,24 +787,28 @@
             font-size: 12px;
             text-align: left;
             font-family: Arial, Helvetica, sans-serif;
-            padding-bottom: 15px;
+            padding: 7px 0px 0px 5px;
             display: block;
         }
 
         .botton_comm {
             display: flex;
             justify-content: space-between;
+                padding: 12px 0px 0 5px;
         }
 
         .botton_comm input[type="button"] {
-            padding: 3px 10px 5px 10px;
+            padding: 3px 10px 5px 19px;
             border-radius: 5px;
-            border: 1px solid transparent;
+            border: 0px solid transparent;
             box-shadow: 0px -3px #01b6ef;
             color: white;
             font-size: 12px;
             background-image: linear-gradient(to top, #0072bc 0%, #0b96ca 100%);
         }
+         .botton_comm input[type="button"]:hover{
+             background:#03ade8;
+         }
 
         .botton_comm .com {
             color: #959595;
@@ -792,20 +827,19 @@
             padding-bottom: 15px;
             border-bottom: 1.5px dotted grey;
         }
-
         .a_end {
             display: flex;
             justify-content: space-between;
-            padding-top: 15px;
+            padding-top: 32px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        .start a {
+        .start{
             font-size: 18px;
             color: black;
             padding-left: 16px;
             position: relative;
         }
-        .start a:before {
+        .start:before {
             content: "";
             width: 10px;
             height: 10px;
@@ -814,32 +848,32 @@
             background: url("../img/sprites.png") no-repeat -10px -10px;
             position: absolute;
         }
-
-        .start a:hover {
+        .start:hover {
             color: red;
         }
-
         .adress li {
             display: inline-block;
             padding: 0 5px;
             font-size: 12px;
         }
-
         .adress li a {
-            color: black
+            color: black;
         }
-
         .adress li a:hover {
             color: red;
         }
-
-        .end a {
+         .adress li a:focus{
+            color: #349bdf;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .end{
             font-size: 18px;
             color: black;
             padding-right: 16px;
             position: relative;
         }
-        .end a:before {
+        .end:before {
             content: "";
             width: 10px;
             height: 10px;
@@ -850,15 +884,13 @@
             position: absolute;
         }
 
-        .end a:hover {
+        .end:hover {
             color: red;
         }
-
-
         /* footer #########################################################*/
 
         .footer {
-            padding-bottom: 20px;
+            padding: 21px 0 20px 14px;
             width: 1000px;
             margin: 0 auto;
         }
